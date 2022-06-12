@@ -1,0 +1,84 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.container {
+    max-width: 1120px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint1200) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: 460px;
+    }
+}
+
+.btn {
+    background: #2962EF;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 11px 24px;
+    display: inline-flex;
+    gap: 7px;
+    transition: 0.3s all ease;
+
+    &:hover {
+        background: $neutralDark;
+        color: #ffffff;
+        
+        svg {
+            transform: translate(5px, -5px);
+            transition: 0.3s all ease;
+        }
+    }
+}
+
+.btn__outline {
+    border-radius: 4px;
+    color: $neutral;
+    padding: 11px 24px;
+    display: inline-flex;
+    transition: 0.3s all ease;
+
+    &:hover {
+        color: $neutralDark;
+        transition: 0.3s all ease;
+    }
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 122%;
+    color: $primary;
+    @media (max-width: $breakpoint992) {
+        font-size: 32px;
+        line-height: 120%;
+    }
+    @media (max-width: $breakpoint480) {
+        font-size: 26px;
+    }
+}
+
+.section__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: $secondary;
+    margin-top: 15px;
+}

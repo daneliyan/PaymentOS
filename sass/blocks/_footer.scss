@@ -1,0 +1,139 @@
+footer {
+    background: $primary;
+    padding-top: 65px;
+    padding-bottom: 90px;
+
+    @media (max-width: $breakpoint768) {
+        padding: 35px 0;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+}
+
+.footer__item {
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $breakpoint768) {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+
+.footer__logo {}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #fff;
+    margin-top: 22px;
+}
+
+.footer__copy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #D6D5DF;
+    max-width: 168px;
+    margin-top: auto;
+
+    @media (max-width: $breakpoint768) {
+        margin-top: 20px;
+    }
+}
+
+.footer__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-top: 38px;
+}
+
+.form__label {
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-top: 12px;
+    position: relative;
+    display: flex;
+}
+
+.footer__input {
+    padding: 20px 60px 20px 20px;
+    border-radius: 4px;
+    width: 100%;
+
+    @media (max-width: $breakpoint768) {
+        padding: 15px 60px 15px 15px;
+    }
+
+    &:focus {
+        outline: 1px solid $neutral;
+    }
+}
+
+.footer__btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+    background: $neutral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    @media (max-width: $breakpoint768) {
+        width: 38px;
+        height: 38px;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+    }
+
+    &:hover {
+        background: $neutralDark;
+        transition: 0.3s all ease;
+    }
+}
+
+.form__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.footer__social {
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer__social-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $secondary;
+}
+
+.footer__link {
+    display: flex;
+}
